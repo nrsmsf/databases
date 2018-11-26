@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 
 <head>
@@ -23,6 +23,7 @@ mysqli_set_charset($link, "utf8");
 $result2 = mysqli_query( $link,  "select * FROM Фирма WHERE `id` = 0");
 $row2 = mysqli_fetch_row($result2);
 $balance2 = $row2[1];
+
 echo "Товар 1: {$balance2} <br><br> ";
 
 # Если кнопка нажата
