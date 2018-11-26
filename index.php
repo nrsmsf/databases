@@ -29,10 +29,10 @@ echo "Товар 1: {$balance2} <br><br> ";
 # Если кнопка нажата
 if( isset( $_POST['print_f'] ) )
 {
-    $result2 = mysqli_query( $link,  "select * FROM  Товар");
-    $row2 = mysqli_fetch_row($result2);
-    $balance2 = $row2[1];
-    echo 'Кнопка нажата!';
+    $result3 = mysqli_query( $link,  "select * FROM  Товар");
+    $row3 = mysqli_fetch_row($result3);
+    echo "Кнопка нажата!<br>";
+    print_r($row3);
 }
 ?>
 <hr>
